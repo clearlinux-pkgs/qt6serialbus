@@ -4,10 +4,10 @@
 # Using build pattern: cmake
 #
 Name     : qt6serialbus
-Version  : 6.5.3
-Release  : 1
-URL      : https://download.qt.io/official_releases/qt/6.5/6.5.3/submodules/qtserialbus-everywhere-src-6.5.3.tar.xz
-Source0  : https://download.qt.io/official_releases/qt/6.5/6.5.3/submodules/qtserialbus-everywhere-src-6.5.3.tar.xz
+Version  : 6.6.0
+Release  : 2
+URL      : https://download.qt.io/official_releases/qt/6.6/6.6.0/submodules/qtserialbus-everywhere-src-6.6.0.tar.xz
+Source0  : https://download.qt.io/official_releases/qt/6.6/6.6.0/submodules/qtserialbus-everywhere-src-6.6.0.tar.xz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-3-Clause GFDL-1.3 GPL-2.0 GPL-3.0 LGPL-3.0
@@ -52,15 +52,15 @@ license components for the qt6serialbus package.
 
 
 %prep
-%setup -q -n qtserialbus-everywhere-src-6.5.3
-cd %{_builddir}/qtserialbus-everywhere-src-6.5.3
+%setup -q -n qtserialbus-everywhere-src-6.6.0
+cd %{_builddir}/qtserialbus-everywhere-src-6.6.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1696365499
+export SOURCE_DATE_EPOCH=1697155217
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -96,7 +96,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1696365499
+export SOURCE_DATE_EPOCH=1697155217
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/qt6serialbus
 cp %{_builddir}/qtserialbus-everywhere-src-%{version}/LICENSES/BSD-3-Clause.txt %{buildroot}/usr/share/package-licenses/qt6serialbus/b073f11f0c81a95ab5e32aa6b5d23a5955a95274 || :
@@ -118,23 +118,23 @@ popd
 
 %files dev
 %defattr(-,root,root,-)
-/usr/include/QtSerialBus/6.5.3/QtSerialBus/private/qcanbusdevice_p.h
-/usr/include/QtSerialBus/6.5.3/QtSerialBus/private/qcanbusdeviceinfo_p.h
-/usr/include/QtSerialBus/6.5.3/QtSerialBus/private/qcandbcfileparser_p.h
-/usr/include/QtSerialBus/6.5.3/QtSerialBus/private/qcanframeprocessor_p.h
-/usr/include/QtSerialBus/6.5.3/QtSerialBus/private/qcanmessagedescription_p.h
-/usr/include/QtSerialBus/6.5.3/QtSerialBus/private/qcansignaldescription_p.h
-/usr/include/QtSerialBus/6.5.3/QtSerialBus/private/qcanuniqueiddescription_p.h
-/usr/include/QtSerialBus/6.5.3/QtSerialBus/private/qmodbus_symbols_p.h
-/usr/include/QtSerialBus/6.5.3/QtSerialBus/private/qmodbusadu_p.h
-/usr/include/QtSerialBus/6.5.3/QtSerialBus/private/qmodbusclient_p.h
-/usr/include/QtSerialBus/6.5.3/QtSerialBus/private/qmodbuscommevent_p.h
-/usr/include/QtSerialBus/6.5.3/QtSerialBus/private/qmodbusdevice_p.h
-/usr/include/QtSerialBus/6.5.3/QtSerialBus/private/qmodbusserver_p.h
-/usr/include/QtSerialBus/6.5.3/QtSerialBus/private/qmodbustcpclient_p.h
-/usr/include/QtSerialBus/6.5.3/QtSerialBus/private/qmodbustcpserver_p.h
-/usr/include/QtSerialBus/6.5.3/QtSerialBus/private/qtserialbus-config_p.h
-/usr/include/QtSerialBus/6.5.3/QtSerialBus/private/qtserialbusexports_p.h
+/usr/include/QtSerialBus/6.6.0/QtSerialBus/private/qcanbusdevice_p.h
+/usr/include/QtSerialBus/6.6.0/QtSerialBus/private/qcanbusdeviceinfo_p.h
+/usr/include/QtSerialBus/6.6.0/QtSerialBus/private/qcandbcfileparser_p.h
+/usr/include/QtSerialBus/6.6.0/QtSerialBus/private/qcanframeprocessor_p.h
+/usr/include/QtSerialBus/6.6.0/QtSerialBus/private/qcanmessagedescription_p.h
+/usr/include/QtSerialBus/6.6.0/QtSerialBus/private/qcansignaldescription_p.h
+/usr/include/QtSerialBus/6.6.0/QtSerialBus/private/qcanuniqueiddescription_p.h
+/usr/include/QtSerialBus/6.6.0/QtSerialBus/private/qmodbus_symbols_p.h
+/usr/include/QtSerialBus/6.6.0/QtSerialBus/private/qmodbusadu_p.h
+/usr/include/QtSerialBus/6.6.0/QtSerialBus/private/qmodbusclient_p.h
+/usr/include/QtSerialBus/6.6.0/QtSerialBus/private/qmodbuscommevent_p.h
+/usr/include/QtSerialBus/6.6.0/QtSerialBus/private/qmodbusdevice_p.h
+/usr/include/QtSerialBus/6.6.0/QtSerialBus/private/qmodbusserver_p.h
+/usr/include/QtSerialBus/6.6.0/QtSerialBus/private/qmodbustcpclient_p.h
+/usr/include/QtSerialBus/6.6.0/QtSerialBus/private/qmodbustcpserver_p.h
+/usr/include/QtSerialBus/6.6.0/QtSerialBus/private/qtserialbus-config_p.h
+/usr/include/QtSerialBus/6.6.0/QtSerialBus/private/qtserialbusexports_p.h
 /usr/include/QtSerialBus/QCanBus
 /usr/include/QtSerialBus/QCanBusDevice
 /usr/include/QtSerialBus/QCanBusDeviceInfo
@@ -233,7 +233,7 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libQt6SerialBus.so.6
-/usr/lib64/libQt6SerialBus.so.6.5.3
+/usr/lib64/libQt6SerialBus.so.6.6.0
 /usr/lib64/qt6/plugins/canbus/libqtpassthrucanbus.so
 /usr/lib64/qt6/plugins/canbus/libqtpeakcanbus.so
 /usr/lib64/qt6/plugins/canbus/libqtsocketcanbus.so
