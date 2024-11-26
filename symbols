@@ -42,9 +42,9 @@ libQt6SerialBus.so.6:QCanSignalDescription::setScaling(double)@@Qt_6
 libQt6SerialBus.so.6:QCanUniqueIdDescription::QCanUniqueIdDescription()@@Qt_6
 libQt6SerialBus.so.6:QCanUniqueIdDescription::setEndian(QSysInfo::Endian)@@Qt_6
 libQt6SerialBus.so.6:QCanUniqueIdDescription::setSource(QtCanBus::DataSource)@@Qt_6
-libQt6SerialBus.so.6:QExplicitlySharedDataPointer<QCanMessageDescriptionPrivate>::~QExplicitlySharedDataPointer()@@Qt_6_PRIVATE_API
-libQt6SerialBus.so.6:QExplicitlySharedDataPointer<QCanSignalDescriptionPrivate>::~QExplicitlySharedDataPointer()@@Qt_6_PRIVATE_API
-libQt6SerialBus.so.6:QExplicitlySharedDataPointer<QCanUniqueIdDescriptionPrivate>::~QExplicitlySharedDataPointer()@@Qt_6_PRIVATE_API
+libQt6SerialBus.so.6:QExplicitlySharedDataPointer<QCanMessageDescriptionPrivate>::~QExplicitlySharedDataPointer()@@Qt_6
+libQt6SerialBus.so.6:QExplicitlySharedDataPointer<QCanSignalDescriptionPrivate>::~QExplicitlySharedDataPointer()@@Qt_6
+libQt6SerialBus.so.6:QExplicitlySharedDataPointer<QCanUniqueIdDescriptionPrivate>::~QExplicitlySharedDataPointer()@@Qt_6
 libQt6SerialBus.so.6:QModbusClient::QModbusClient(QObject*)@@Qt_6
 libQt6SerialBus.so.6:QModbusClient::setNumberOfRetries(int)@@Qt_6
 libQt6SerialBus.so.6:QModbusClient::setTimeout(int)@@Qt_6
